@@ -97,6 +97,20 @@ ul.clean li{margin:.35em 0}
 .akrow{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08)}
 .akrow .an{color:var(--green);font-weight:800;flex:0 0 auto;min-width:46px}
 
+/* ---- Geometry figures (inline SVG) ---- */
+.fig{display:block;margin:14px auto;max-width:100%;height:auto;color:var(--ink)}
+.fig .edge{fill:none;stroke:var(--blue);stroke-width:2.2;stroke-linejoin:round}
+.fig .edge2{fill:none;stroke:var(--accent2);stroke-width:2.2}
+.fig .diag{fill:none;stroke:var(--accent);stroke-width:1.8;stroke-dasharray:5 4}
+.fig .fillshape{fill:rgba(93,181,255,.10);stroke:var(--blue);stroke-width:2.2;stroke-linejoin:round}
+.fig .mark{fill:none;stroke:currentColor;stroke-width:1.6}
+.fig .vtx{fill:currentColor;font-weight:700;font-size:15px;font-family:Georgia,serif}
+.fig .lbl{fill:var(--muted);font-size:13px;font-family:"Segoe UI",sans-serif}
+.fig .ang{fill:var(--accent);font-size:13px;font-weight:700;font-family:"Segoe UI",sans-serif}
+.fig .rt{fill:none;stroke:currentColor;stroke-width:1.4}
+.figcap{text-align:center;color:var(--muted);font-size:.82rem;margin:-6px 0 12px}
+.figwrap{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:10px;margin:14px 0}
+
 /* ---- Interactive quiz ---- */
 .quizbar{position:sticky;top:60px;z-index:20;display:flex;align-items:center;gap:12px;flex-wrap:wrap;
   background:var(--card2);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:9px 14px;margin:6px 0 14px}
@@ -192,4 +206,16 @@ ul.clean li{margin:.35em 0}
   .fillrow input{border:none;border-bottom:1px solid #000;border-radius:0;width:120px;background:#fff}
   .fillrow button{display:none!important}
   .selfcheck{display:none!important}
+
+  /* geometry figures → solid black on white */
+  .figwrap{background:#fff!important;border:1px solid #000;page-break-inside:avoid}
+  .fig{color:#000!important}
+  .fig .edge,.fig .edge2{stroke:#000!important}
+  .fig .diag{stroke:#000!important;stroke-dasharray:5 4}
+  .fig .fillshape{fill:#fff!important;stroke:#000!important}
+  .fig .mark,.fig .rt{stroke:#000!important}
+  .fig .vtx{fill:#000!important}
+  .fig .lbl{fill:#000!important}
+  .fig .ang{fill:#000!important}
+  .figcap{color:#000!important}
 }
