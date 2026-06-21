@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes · Digits in Disguise · Chapter 5</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="bar-inner">
+    <div class="brand">High-Yield Notes</div>
+    <div class="crumb"><a href="../../index.html">Home</a> › <a href="../index.html">Ch 5</a> › Digits in Disguise</div>
+    <div class="spacer"></div>
+    <div class="tabs">
+      <a class="active" href="notes.html">Notes</a>
+      <a href="worksheet.html">Worksheet</a>
+      <a href="answer-key.html">Answer key</a>
+    </div>
+    <a class="dl" href="notes.pdf">⬇ PDF</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="kicker">Chapter 5 · Concept 3</div>
+    <h1>Digits in <span class="hl">Disguise</span></h1>
+    <p class="lead">Puzzles where letters or blanks hide digits. Solve them using place value, divisibility tests, and careful reasoning about each position.</p>
+  </div>
+
+  <section class="card">
+    <h2><span class="badge">Key Concept</span> Two kinds of digit puzzles</h2>
+
+    <h3>1. Cryptarithms (letters stand for digits)</h3>
+    <div class="keyline"><span class="k">•</span><div>Each <b>letter is a single digit</b>, and the <b>same letter</b> always means the <b>same digit</b>.</div></div>
+    <div class="keyline"><span class="k">•</span><div>Usually a <b>leading digit is not 0</b>.</div></div>
+    <div class="keyline"><span class="k">•</span><div>Strategy: look at the <b>units column</b> first, watch the <b>carrying</b>, and use any structure (like a repeated-digit answer).</div></div>
+    <div class="mathbox">A B × A = C C C &nbsp;→&nbsp; CCC = C × 111 = C × 3 × 37, so 37 × 3 = 111 (A=3, B=7, C=1)</div>
+
+    <h3>2. Finding a missing digit for divisibility</h3>
+    <p>When a number has a blank (or letter), use the relevant <b>divisibility test</b> to pin down the missing digit.</p>
+    <div class="keyline"><span class="k">•</span><div>For <b>9</b>: make the digit sum a multiple of 9.</div></div>
+    <div class="keyline"><span class="k">•</span><div>For <b>18</b>: the number must be divisible by <b>2 and 9</b> together.</div></div>
+    <div class="keyline"><span class="k">•</span><div>For <b>3</b>: make the digit sum a multiple of 3.</div></div>
+    <div class="mathbox">31z5 is a multiple of 9 ⇒ 3 + 1 + z + 5 = 9 + z is a multiple of 9 ⇒ z = 0 or 9</div>
+
+    <div class="callout"><b>Prerequisite refresher:</b> A "repdigit" like 111, 222… equals (that digit) × 111. And 111 = 3 × 37.</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="badge trap">Common Traps</span> Where marks slip away</h2>
+    <div class="callout danger"><b>Trap 1 — Leading zeros.</b> The first digit of a number can't be 0, so rule those letter values out.</div>
+    <div class="callout danger"><b>Trap 2 — List every solution.</b> "Find all z" often has more than one answer (e.g. z = 0 or 9). Don't stop at the first.</div>
+    <div class="callout danger"><b>Trap 3 — Combine tests for composite divisors.</b> For 18 use 2 and 9; for 6 use 2 and 3 — both conditions must hold.</div>
+    <div class="callout danger"><b>Trap 4 — Same letter, same digit.</b> If C appears three times, it is the same digit each time.</div>
+    <div class="callout warn"><b>Slip 5 — Check your answer</b> by substituting the digit back into the original number.</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="badge ex">Worked Examples</span> Model answers — write them like this</h2>
+
+    <div class="solution">
+      <div class="qline">Example A. Solve the cryptarithm A B × A = C C C.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>CCC is a repdigit, so CCC = C × 111 = C × 3 × 37.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>So one factor should be 37 and the other a single digit: 37 × 3 = 111.</span></div>
+      <div class="step"><span class="lbl">Step 3:</span><span>Matching A B × A: A = 3, B = 7, and C = 1.</span></div>
+      <div class="finalbox">∴ A = 3, B = 7, C = 1 (37 × 3 = 111)</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example B. Find all digits z so that 31z5 is a multiple of 9.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Digit sum = 3 + 1 + z + 5 = 9 + z.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>9 + z must be a multiple of 9, so z = 0 (gives 9) or z = 9 (gives 18).</span></div>
+      <div class="finalbox">∴ z = 0 or 9</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example C. Find all digits a so that 6a2 is divisible by 3.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Digit sum = 6 + a + 2 = 8 + a.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>8 + a must be a multiple of 3, so a = 1 (9), 4 (12) or 7 (15).</span></div>
+      <div class="finalbox">∴ a = 1, 4 or 7</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example D. Find all digits b so that 732b is divisible by 6.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Divisible by 6 means divisible by 2 and by 3. For 2, b must be even.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>For 3, digit sum 7 + 3 + 2 + b = 12 + b must be a multiple of 3, so b = 0, 3, 6 or 9.</span></div>
+      <div class="step"><span class="lbl">Step 3:</span><span>The even values among those are b = 0 and 6.</span></div>
+      <div class="finalbox">∴ b = 0 or 6</div>
+    </div>
+  </section>
+
+  <div class="footer">Next: try the <a href="worksheet.html">worksheet</a>, then check the <a href="answer-key.html">answer key</a>.</div>
+</main>
+</body>
+</html>

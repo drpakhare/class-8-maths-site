@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes · Patterns, Parity &amp; Multiples · Chapter 5</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="bar-inner">
+    <div class="brand">High-Yield Notes</div>
+    <div class="crumb"><a href="../../index.html">Home</a> › <a href="../index.html">Ch 5</a> › Patterns &amp; Parity</div>
+    <div class="spacer"></div>
+    <div class="tabs">
+      <a class="active" href="notes.html">Notes</a>
+      <a href="worksheet.html">Worksheet</a>
+      <a href="answer-key.html">Answer key</a>
+    </div>
+    <a class="dl" href="notes.pdf">⬇ PDF</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="kicker">Chapter 5 · Concept 1</div>
+    <h1>Patterns, Parity &amp; <span class="hl">Multiples</span></h1>
+    <p class="lead">Use algebra to describe number patterns, decide when an expression is always even or odd, and reason about multiples — the heart of this chapter's exam questions.</p>
+  </div>
+
+  <section class="card">
+    <h2><span class="badge">Key Concept</span> Three big ideas</h2>
+
+    <h3>1. Consecutive numbers in algebra</h3>
+    <p>If the smallest is n, consecutive numbers are n, n+1, n+2, … Naming one of them with a letter lets you describe the rest.</p>
+    <div class="mathbox">If the greatest of five consecutive numbers is p, the five are p, p−1, p−2, p−3, p−4.</div>
+
+    <h3>2. Parity — when is an expression always even / odd?</h3>
+    <div class="keyline"><span class="k">•</span><div>If <b>2 is a factor</b> of every term (e.g. 2a + 2b = 2(a+b), or 4x + 6 = 2(2x+3)), the value is <b>always even</b>.</div></div>
+    <div class="keyline"><span class="k">•</span><div>The product of two consecutive numbers, <b>n(n+1)</b>, is <b>always even</b> (one of them must be even). So is n² − n = n(n−1).</div></div>
+    <div class="keyline"><span class="k">•</span><div>An expression like <b>2n + 1</b> is <b>always odd</b>; one like <b>3g + 5h</b> is <b>sometimes</b> even, sometimes odd — it depends on the values.</div></div>
+
+    <h3>3. Multiples and the LCM rule</h3>
+    <div class="keyline"><span class="k">•</span><div>If a divides M and a divides N, then a divides <b>M + N</b> and <b>M − N</b>.</div></div>
+    <div class="keyline"><span class="k">•</span><div>If A is divisible by both k and m, then A is divisible by <b>LCM(k, m)</b>. So divisible by 9 and 4 ⇒ divisible by 36. But divisible by 6 and 4 ⇒ divisible by 12 (LCM), not always 24.</div></div>
+    <div class="keyline"><span class="k">•</span><div>To count multiples of m in a range, divide the endpoints by m. Multiples of 7 from 200 to 300: 7×29 = 203 up to 7×42 = 294, so 42 − 29 + 1 = <b>14</b>.</div></div>
+
+    <div class="callout"><b>Prerequisite refresher:</b> "Parity" = whether a number is even or odd. A number is <b>even</b> exactly when 2 is one of its factors. "LCM" = lowest common multiple.</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="badge trap">Common Traps</span> Where marks slip away</h2>
+    <div class="callout danger"><b>Trap 1 — "Always" vs "sometimes".</b> 2a + 2b is <i>always</i> even; 3g + 5h is only <i>sometimes</i> even. Check whether 2 is a factor of the whole expression.</div>
+    <div class="callout danger"><b>Trap 2 — LCM, not the product.</b> Divisible by 6 and 4 means divisible by LCM(6,4) = 12, not 6 × 4 = 24.</div>
+    <div class="callout danger"><b>Trap 3 — Counting multiples in a range.</b> Use (last index − first index + 1); don't just divide the range width.</div>
+    <div class="callout danger"><b>Trap 4 — 1 is not prime.</b> A prime has exactly two factors; 1 has only one, so 1 is not prime.</div>
+    <div class="callout warn"><b>Slip 5 — Justify with algebra</b> (e.g. 4x + 6 = 2(2x + 3)) to earn full marks on "always/sometimes/never" questions.</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="badge ex">Worked Examples</span> Model answers — write them like this</h2>
+
+    <div class="solution">
+      <div class="qline">Example A. The greatest of five consecutive numbers is p. Write the other four.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Consecutive numbers go down by 1 each step from p.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>The four below p are p−1, p−2, p−3, p−4.</span></div>
+      <div class="finalbox">∴ p−1, p−2, p−3, p−4</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example B. Show that 4x + 6 is always even.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Take out the common factor 2: 4x + 6 = 2(2x + 3).</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>Since 2 is a factor, the value is a multiple of 2 for every integer x.</span></div>
+      <div class="finalbox">∴ 4x + 6 is always even</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example C. The sum of three consecutive even numbers is 72. Find them.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Let them be n, n+2, n+4. Sum = 3n + 6 = 72.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>3n = 66, so n = 22.</span></div>
+      <div class="step"><span class="lbl">Step 3:</span><span>The numbers are 22, 24, 26.</span></div>
+      <div class="finalbox">∴ 22, 24, 26</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example D. How many multiples of 7 lie between 200 and 300?</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Smallest multiple ≥ 200 is 7 × 29 = 203; largest ≤ 300 is 7 × 42 = 294.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>Count = 42 − 29 + 1 = 14.</span></div>
+      <div class="finalbox">∴ 14 multiples</div>
+    </div>
+  </section>
+
+  <div class="footer">Next: try the <a href="worksheet.html">worksheet</a>, then check the <a href="answer-key.html">answer key</a>.</div>
+</main>
+</body>
+</html>

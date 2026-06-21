@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes · Divisibility &amp; Digital Roots · Chapter 5</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="bar-inner">
+    <div class="brand">High-Yield Notes</div>
+    <div class="crumb"><a href="../../index.html">Home</a> › <a href="../index.html">Ch 5</a> › Divisibility &amp; Digital Roots</div>
+    <div class="spacer"></div>
+    <div class="tabs">
+      <a class="active" href="notes.html">Notes</a>
+      <a href="worksheet.html">Worksheet</a>
+      <a href="answer-key.html">Answer key</a>
+    </div>
+    <a class="dl" href="notes.pdf">⬇ PDF</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="kicker">Chapter 5 · Concept 2</div>
+    <h1>Divisibility &amp; <span class="hl">Digital Roots</span></h1>
+    <p class="lead">Quick tests to check divisibility without dividing, and the digital-root shortcut that powers many of them.</p>
+  </div>
+
+  <section class="card">
+    <h2><span class="badge">Key Concept</span> The divisibility tests</h2>
+    <table class="tbl">
+      <tr><th>Divisible by</th><th>Quick test</th></tr>
+      <tr><td>2</td><td>last digit is even (0, 2, 4, 6, 8)</td></tr>
+      <tr><td>5</td><td>last digit is 0 or 5</td></tr>
+      <tr><td>10</td><td>last digit is 0</td></tr>
+      <tr><td>4</td><td>the last two digits form a number divisible by 4</td></tr>
+      <tr><td>8</td><td>the last three digits form a number divisible by 8</td></tr>
+      <tr><td>3</td><td>the sum of the digits is divisible by 3</td></tr>
+      <tr><td>9</td><td>the sum of the digits is divisible by 9</td></tr>
+      <tr><td>6</td><td>divisible by both 2 and 3</td></tr>
+      <tr><td>11</td><td>the alternating sum of digits (from the units digit) is 0 or a multiple of 11</td></tr>
+    </table>
+
+    <h3>The digital root</h3>
+    <p>Keep adding the digits of a number until a single digit remains — that is the <b>digital root</b>. It equals the remainder when the number is divided by 9 (and a multiple of 9 has digital root 9).</p>
+    <div class="mathbox">7309 → 7 + 3 + 0 + 9 = 19 → 1 + 9 = 10 → 1 + 0 = 1. &nbsp; Digital root = 1</div>
+
+    <div class="callout fun"><b>Why digit sums work for 9:</b> every place value (10, 100, 1000…) is one more than a multiple of 9, so each digit contributes itself to the remainder. That's why the digit sum tells you the remainder on division by 9 (and the same idea, with 3, works for 3).</div>
+    <div class="callout"><b>Prerequisite refresher:</b> "Alternating sum" means +, −, +, − the digits. For 11, start the + at the units digit.</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="badge trap">Common Traps</span> Where marks slip away</h2>
+    <div class="callout danger"><b>Trap 1 — 9 is not about the last digit.</b> Both 99 and 109 end in 9, but only 99 is divisible by 9. Use the digit sum.</div>
+    <div class="callout danger"><b>Trap 2 — Divisible by 4 and 6 ≠ divisible by 24.</b> Check 24 by testing 3 and 8 (its co-prime factors), not 4 and 6.</div>
+    <div class="callout danger"><b>Trap 3 — The 11 test.</b> A result of 0 also passes — 0 is a multiple of 11.</div>
+    <div class="callout danger"><b>Trap 4 — Digit sum gives the remainder.</b> If the digit sum of a number is 30, it is divisible by 3 (30 is) but not by 9 (30 isn't).</div>
+    <div class="callout warn"><b>Slip 5 — For 6, both tests must pass</b> — divisible by 2 AND by 3.</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="badge ex">Worked Examples</span> Model answers — write them like this</h2>
+
+    <div class="solution">
+      <div class="qline">Example A. Is 405 divisible by 9?</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Add the digits: 4 + 0 + 5 = 9.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>9 is divisible by 9, so 405 is divisible by 9.</span></div>
+      <div class="finalbox">∴ Yes, 405 is divisible by 9</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example B. Find the value(s) of z so that 31z5 is a multiple of 9.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Digit sum = 3 + 1 + z + 5 = 9 + z.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>9 + z must be a multiple of 9, so z = 0 or z = 9.</span></div>
+      <div class="finalbox">∴ z = 0 or 9</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example C. Check whether 406839 is divisible by 3, 9 and 11.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Digit sum = 4 + 0 + 6 + 8 + 3 + 9 = 30. Divisible by 3 (yes), by 9 (no, 30 isn't).</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>Alternating sum from units: 9 − 3 + 8 − 6 + 0 − 4 = 4, not a multiple of 11.</span></div>
+      <div class="finalbox">∴ Divisible by 3 only (not by 9 or 11)</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example D. Find the digital root of 7309.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>7 + 3 + 0 + 9 = 19.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>1 + 9 = 10, then 1 + 0 = 1.</span></div>
+      <div class="finalbox">∴ Digital root = 1</div>
+    </div>
+  </section>
+
+  <div class="footer">Next: try the <a href="worksheet.html">worksheet</a>, then check the <a href="answer-key.html">answer key</a>.</div>
+</main>
+</body>
+</html>

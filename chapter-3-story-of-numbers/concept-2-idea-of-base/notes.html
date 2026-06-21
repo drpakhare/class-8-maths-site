@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notes · The Idea of a Base · Chapter 3</title>
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="bar-inner">
+    <div class="brand">High-Yield Notes</div>
+    <div class="crumb"><a href="../../index.html">Home</a> › <a href="../index.html">Ch 3</a> › The Idea of a Base</div>
+    <div class="spacer"></div>
+    <div class="tabs">
+      <a class="active" href="notes.html">Notes</a>
+      <a href="worksheet.html">Worksheet</a>
+      <a href="answer-key.html">Answer key</a>
+    </div>
+    <a class="dl" href="notes.pdf">⬇ PDF</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="kicker">Chapter 3 · Concept 2</div>
+    <h1>The Idea of a <span class="hl">Base</span></h1>
+    <p class="lead">A base system groups numbers using landmark numbers that are all powers of one fixed number. Learn what a base is, how to convert between bases, and why bases make arithmetic easy.</p>
+  </div>
+
+  <section class="card">
+    <h2><span class="badge">Key Concept</span> What is a base?</h2>
+    <div class="callout"><b>The idea:</b> A number system is <b>base-n</b> if its landmark numbers start at 1 and each next one is the previous × n — so they are all <b>powers of n</b>. You group the number using these landmark numbers.</div>
+    <div class="mathbox">Base 5 landmark numbers: 5⁰=1, 5¹=5, 5²=25, 5³=125, 5⁴=625, 5⁵=3125</div>
+    <p>The Egyptian system is <b>base 10</b> (landmark numbers 1, 10, 100, 1000…). Base 10 is also called the <b>decimal</b> system. We can invent other bases too — base 5, base 4, and so on.</p>
+
+    <h3>Converting from base 10 into another base</h3>
+    <p>Group the number using the largest landmark number that fits, then the next, and so on. The count of each landmark number becomes a digit. (Quick method: keep dividing by the base and read the remainders from bottom to top.)</p>
+    <div class="mathbox">143 = (1 × 125) + (0 × 25) + (3 × 5) + (3 × 1) &nbsp;→&nbsp; 1033 in base 5</div>
+
+    <h3>Converting back to base 10</h3>
+    <p>Multiply each digit by its landmark number (its place value) and add.</p>
+    <div class="mathbox">1033 in base 5 = 1×125 + 0×25 + 3×5 + 3×1 = 143</div>
+
+    <div class="callout fun"><b>Why bases are powerful:</b> the product of any two landmark numbers is another landmark number (because powers add: 10² × 10³ = 10⁵). This makes multiplication far easier than in the Roman system, where landmark sizes are irregular.</div>
+    <div class="callout"><b>Prerequisite refresher:</b> A digit's <i>place value</i> is the landmark number it sits over. In base 5 the places are …, 125, 25, 5, 1 (from left to right).</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="badge trap">Common Traps</span> Where marks slip away</h2>
+    <div class="callout danger"><b>Trap 1 — Digits must be less than the base.</b> In base 5 the only digits are 0, 1, 2, 3, 4. You never write a "5" in base 5 — five of one landmark make the next.</div>
+    <div class="callout danger"><b>Trap 2 — Don't forget the zeros.</b> If a landmark number isn't used, write 0 in that place (143 → 1<b>0</b>33 in base 5, not 133).</div>
+    <div class="callout danger"><b>Trap 3 — Place value vs digit.</b> When converting back, multiply each digit by its landmark number, not by the base each time blindly.</div>
+    <div class="callout danger"><b>Trap 4 — Largest landmark first.</b> Always start grouping from the biggest landmark number that fits.</div>
+    <div class="callout warn"><b>Slip 5 — Show the base</b> (e.g. write "1033 in base 5") so it isn't read as an ordinary number.</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="badge ex">Worked Examples</span> Model answers — write them like this</h2>
+
+    <div class="solution">
+      <div class="qline">Example A. Express 143 in base 5.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Largest base-5 landmark below 143 is 125. 143 ÷ 125 = 1 remainder 18.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>18 ÷ 25 = 0 (25 doesn't fit) → digit 0. 18 ÷ 5 = 3 remainder 3 → digit 3.</span></div>
+      <div class="step"><span class="lbl">Step 3:</span><span>Remaining 3 ones → digit 3. Reading the digits: 1, 0, 3, 3.</span></div>
+      <div class="finalbox">∴ 143 = 1033 in base 5</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example B. Convert 1033 (base 5) to base 10.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Place values are 125, 25, 5, 1.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>1×125 + 0×25 + 3×5 + 3×1 = 125 + 0 + 15 + 3.</span></div>
+      <div class="finalbox">∴ 1033 (base 5) = 143</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example C. Express 16 in base 4.</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Base-4 landmark numbers: 1, 4, 16, 64. The largest that fits 16 is 16 itself.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>16 = 1×16 + 0×4 + 0×1 → digits 1, 0, 0.</span></div>
+      <div class="finalbox">∴ 16 = 100 in base 4</div>
+    </div>
+
+    <div class="solution">
+      <div class="qline">Example D. Why is multiplication easy in a base system?</div>
+      <div class="step"><span class="lbl">Step 1:</span><span>Every landmark number is a power of the base.</span></div>
+      <div class="step"><span class="lbl">Step 2:</span><span>Multiplying two landmark numbers just adds the powers, e.g. 10² × 10³ = 10⁵ — another landmark number.</span></div>
+      <div class="finalbox">∴ Products of landmark numbers stay landmark numbers, so multiplication is simple</div>
+    </div>
+  </section>
+
+  <div class="footer">Next: try the <a href="worksheet.html">worksheet</a>, then check the <a href="answer-key.html">answer key</a>.</div>
+</main>
+</body>
+</html>
